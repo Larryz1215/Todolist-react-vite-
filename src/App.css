@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;  
+}
+
+.layout{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: auto;
+  height: 100vh;
+  
+}
+.app{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-grow: 1;
+  }
+
+header {
+  margin: 0;
+  height: 5rem;
+  padding: 0 1.5rem;  
+  background-color: rgb(64, 137, 233);
+  color: rgb(255, 255, 255);
+}
+
+footer {  
+  display: flex;
+  bottom: 0;
+  left: 0;
+  height: 3rem;
+  text-align: center;
+  width: 100%;
+  background-color: rgb(64, 137, 233);
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+footer p{
+font-size: 1.5rem;
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {  
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+
+input::placeholder {
+  color: #494444;
+  transition: 1s;
+}
+
+input:focus::placeholder {
+  color: #aeaeae;
+}
+
+.formBtn {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border-radius: 50%;
+  position: absolute;
+  background: rgb(230, 81, 81);
+  color: #fff;
+  right: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  bottom: 0;
+}
+.todoContainer {
+  display: flex;
+  flex-wrap: wrap;  
+  margin: 1rem; 
+  justify-content: space-evenly;    
+  
+}
+.todo {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  min-width: 350px;
+  max-height: 240px;
+  margin: 16px;
+  float: left;
+}
+.todo .todoTitle {
+  background-color: rgba(235, 206, 76, 0.795);
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 40px;
+  padding: 5px;
+  border-radius: 7px 7px 0 0;
+}
+
+.todoTitle .deleteNote {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+}
+
+.todo .note {
+  min-height: 80px;
+  position: relative;
+  margin-top: 10px;
+  white-space: pre-line;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+.note .editNote {
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+.note p {
+  margin-top: 10px;
+  white-space: pre-line;
+  line-height: 1.5;
+  padding: 0 10px;
+}
+
+@media (max-width: 576px) {
+  form {
+    width: 90%;
+  }
+  .todo {
+    width: 100%;
+  }
+}
