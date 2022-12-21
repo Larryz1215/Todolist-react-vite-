@@ -23,4 +23,4 @@
 <li>儲存資料至瀏覽器暫存</li>
 </ul>
 <h4>畫面:</h4>
-![image] (https://github.com/Larryz1215/Todolist-react-vite-/blob/master/todoscreen.PNG)
+![image](https://github.com/Larryz1215/Todolist-react-vite-/blob/master/todoscreen.PNG)
