@@ -20,6 +20,8 @@
 <li>新增</li>
 <li>刪除</li>
 <li>更改</li>
+<li>儲存資料至瀏覽器暫存</li>
 </ul>
 <h4>畫面:</h4>
+<img src="todoscreen.PNG" />
 
